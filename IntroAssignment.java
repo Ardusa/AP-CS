@@ -1,3 +1,5 @@
-public class IntroAssignment
-
-System.out.print("Hello World!");
+public class IntroAssignment{
+    public static void main(String arg[]){
+        System.out.print("Hello World");
+    }
+}
