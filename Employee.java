@@ -7,6 +7,11 @@ public class Employee {
         this.salary = salary;
     }
 
+    public Employee() {
+        this.name = " ";
+        this.salary = 0;
+    }
+
     public String getName() {
         return name;
     }
