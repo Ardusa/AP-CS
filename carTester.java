@@ -1,4 +1,4 @@
-public class CarTester {
+public class carTester {
     public static void main(String[] args) {
         Car car = new Car(50);
         car.addGas(20);
