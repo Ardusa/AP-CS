@@ -55,6 +55,6 @@ public class Pairs {
 
         System.out.print("Sorted: " + p.sort()[0] + " " + p.sort()[1] + " " + p.sort()[2] + " " + p.sort()[3]);
         System.out.print("\t\t" + p.howManyPairs());
-        
+        in.close();
     }
 }
