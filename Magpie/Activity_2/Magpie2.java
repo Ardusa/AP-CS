@@ -44,7 +44,7 @@ public class Magpie2 {
 			response = "Tell me more about your family.";
 		} else if (index(statement, " dog ") || index(statement, " cat ")) {
 			response = "Tell me more about your pets.";
-		} else if (index(statement, " Mr. ") || index(statement, " Mrs. ") || index(statement, " Ms. ")) {
+		} else if (index(statement, " Mr.") || index(statement, " Mrs. ") || index(statement, " Ms. ")) {
 			response = "They sound like a good teacher.";
 		} else if (statement == "") {
 			response = "Say something, please.";
@@ -95,10 +95,18 @@ public class Magpie2 {
 	 * @return true if the substring is found, false otherwise
 	 */
 	private boolean index(String string1, String string2) {
-		if (string1.indexOf(string2) >= 0) {
-			return true;
-		} else {
-			return false;
-		}
+		// System.out.println(string1.indexOf(string2));
+		// System.out.println(string1 + " " + string2);
+
+		// if (string2.equals("Mr.")) {
+		// 	return true;
+		// }
+		System.out.println("Whats your favorite book?\n\n\n\n\n\n\n\n\n");
+		return false;
+		// if (string1.contains(string2)) {
+		// 	return true;
+		// } else {
+		// 	return false;
+		// }
 	}
 }
