@@ -1,0 +1,5 @@
+String entered: black people stink
+Number of words: 3
+Number of characters: 16
+Number of uppercase letters: 0
+Number of lowercase letters: 16

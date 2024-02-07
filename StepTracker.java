@@ -30,28 +30,14 @@ public class StepTracker {
     }
 
     public static void main(String[] args) {
-        StepTracker tr = new StepTracker(10000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        System.out.println("Adding 9000 steps");
-        tr.addDailySteps(9000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        System.out.println("Adding 5000 steps");
-        tr.addDailySteps(5000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        System.out.println("Adding 13000 steps");
-        tr.addDailySteps(13000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        System.out.println("Adding 23000 steps");
-        tr.addDailySteps(23000);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
-        System.out.println("Adding 1111 steps");
-        tr.addDailySteps(1111);
-        System.out.println("Active days: " + tr.activeDays());
-        System.out.println("Average steps: " + tr.averageSteps());
+        StepTracker cs = new StepTracker(10000);
+        System.out.println("Adding 20000 steps on Monday");
+        cs.addDailySteps(20000);
+        System.out.println("Adding 25000 steps on Tuesday");
+        cs.addDailySteps(25000);
+        System.out.println("Adding 15000 steps on Wednesday");
+        cs.addDailySteps(15000);
+        System.out.println("Active days: " + cs.activeDays());
+        System.out.println("Average steps: " + cs.averageSteps());
     }
 }
