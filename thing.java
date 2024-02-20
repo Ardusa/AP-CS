@@ -121,5 +121,6 @@ public class thing {
                 System.out.println(number1);
             }
         }
+        in.close();
     }
 }

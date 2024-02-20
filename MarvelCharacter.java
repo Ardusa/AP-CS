@@ -39,7 +39,7 @@ public class MarvelCharacter {
     }
 
     public static void main(String[] args) {
-        MarvelCharacter avenger1 = new MarvelCharacter();
+        // MarvelCharacter avenger1 = new MarvelCharacter();
         MarvelCharacter spiderMan = new MarvelCharacter("Spider-Man", "webbing projection", 300);
         MarvelCharacter symbiote = new MarvelCharacter("Venom", "shapeshifting", 144);
         System.out.println(symbiote.getName());

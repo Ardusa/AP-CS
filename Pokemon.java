@@ -30,6 +30,10 @@ public class Pokemon {
         return hp <= 0;
     }
 
+    public String getBestAttack() {
+        return bestAttack;
+    }
+
     public static void main(String[] args) {
         Pokemon charmander = new Pokemon("Charmander", "Blaze", 39);
 

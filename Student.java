@@ -1,28 +1,34 @@
 public class Student {
     private String name;
-    private int totalQuizScore;
-    private int numberOfQuizzes;
+    private int[] quizScores;
 
-    public Student(String name) {
+    public Student(String name, int[] quizScores) {
         this.name = name;
-        this.totalQuizScore = 0;
-        this.numberOfQuizzes = 0;
+        this.quizScores = quizScores;
+    }
+
+    public int getQuizScore(int quizNumber) {
+        return quizScores[quizNumber];
+    }
+
+    public void setQuizScore(int quizNumber, int newScore) {
+        quizScores[quizNumber] = newScore;
     }
 
     public String getName() {
         return name;
     }
 
-    public void addQuiz(int score) {
-        totalQuizScore += score;
-        numberOfQuizzes++;
+    public void setName(String newName) {
+        name = newName;
     }
 
-    public int getTotalScore() {
-        return totalQuizScore;
-    }
-
-    public int getAverageScore() {
-        return totalQuizScore / numberOfQuizzes;
+    @Override
+    public String toString() {
+        String result = name + ": ";
+        for (int score : quizScores) {
+            result += score + " ";
+        }
+        return result;
     }
 }
