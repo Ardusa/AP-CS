@@ -20,5 +20,6 @@ public class getDataFromUser {
                 System.out.println(i + " : " + counts[i]);
             }
         }
+        in.close();
     }
 }

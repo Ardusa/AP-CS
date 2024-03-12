@@ -37,5 +37,6 @@ public class characterCount {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        in.close();
     }
 }

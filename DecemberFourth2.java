@@ -10,5 +10,6 @@ public class DecemberFourth2 {
                 System.out.println(word.substring(i, j + 1));
             }
         }
+        in.close();
     }
 }

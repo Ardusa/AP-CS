@@ -8,16 +8,24 @@ public class Employee {
     }
 
     public Employee() {
-        this.name = " ";
-        this.salary = 0;
+        this.name = "";
+        this.salary = 25000.00;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public double getSalary() {
         return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     /**
@@ -29,5 +37,14 @@ public class Employee {
             increase += 1;
         }
         salary *= increase;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee [name=" + name + ", salary=" + salary + "]";
+    }
+
+    public String getVacation() {
+        return "Employees need to wait 1 year to receive vacation!";
     }
 }
